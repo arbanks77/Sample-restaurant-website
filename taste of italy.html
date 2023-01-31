@@ -1,43 +1,65 @@
 <!DOCTYPE html>
     <html>
-        <link href="css toi.css" rel='Stylesheet'>
-        <link href="js toi.js" rel='Javascript'>
-        <link href="Menu.html">
-        <link href="Event.html">
-        <link href="taste of italy.html">
-        <link href ="https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css?family=Merienda" rel='stylesheet'>
+        <link href = "css toi.css" rel='Stylesheet'>
+        <link href = "js toi.js" rel='Javascript'>
+        <link href = "Menu.html">
+        <link href = "Event.html">
+        <link href = "taste of italy.html">
+        <link href = "https://fonts.googleapis.com/css?family=Alegreya Sans SC" rel='stylesheet'>
+        <link href = "https://fonts.googleapis.com/css?family=Merienda" rel='stylesheet'>
         <header>
             <title>Taste of Italy</title>
             <nav>
-        <!--Insert location later-->
-                <a href="taste of italy.html">Home</a></li>
-                   <div class="dropdown">
-                    <button class = "drpdwnbtn">Menu
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class = "dropdown-content">
-                        <a href="Menu.html#Lunch">Lunch</a></li>
-                        <a href="Menu.html#Dinner">Dinner</a></li>
-                        <a href="Menu.html#Desert">Desert</a></li>
-                        <a href="Menu.html#Drinks">Drinks</a></li>
+                <div class="topnav">
+                    <div class = "dropdown2">
+                        <button class = "drpdwnbtn2">
+                            <span style="font-size:25px;cursor:pointer" onclick="openNav()" id = "hamburger">&#9776; </span>
+                        </button>
+                        <div class = "dropdown-content2">
+                            <a href = "taste of italy.html" class = "navbttn2" class = "navbttn">Home</a></li>
+                            <div class = "dropdown">
+                                <button class = "drpdwnbtn" id = "menubttn">Menu</button>
+                                <div class = "dropdown-content">
+                                    <a href = "Menu.html#Lunch">Lunch</a></li>
+                                    <a href = "Menu.html#Dinner">Dinner</a></li>
+                                    <a href = "Menu.html#Desert">Desert</a></li>
+                                    <a href = "Menu.html#Drinks">Drinks</a></li>
+                                </div>
+                            </div>
+                            <a href = "Event.html" class = "navbttn2">Events</a></li> 
+                            <a href = "taste of italy.html#cus" class = "navbttn2">Contact Us</a></li>
+                            <a href = "Event.html#visit" class = "navbttn2"> Find A location </a></li>
+                        </div>
                     </div>
-                    </div>
-                <a href="Event.html">Events</a></div></li> 
-            </nav> 
-            <H1>Taste Of Italy</H1>
+                </div> 
+            </nav>
+            <br> 
+            <div class = "heading">
+            <h1 id = "title1">Taste</h1><h1 id = "title2"> Of</h1><h1 id = "title3"> Italy</h1>
+            </div>
         </header>
+        <br>
         <body>
+            <div class = "frontpgimgs">
+                <a href="Menu.html#Drinks"><img src="generic restaurant photo.jpg" id = "img1"/></a>
+                <a href="Menu.html#Dinner"><img src = "chicken.jpg" id = "img2"/></a>
+                <a href="Menu.html"><img src = "PIA_163_Mill_Valley_Food_Shots-PASTA-Group26125.jpg" id = "img3"/></a>    
+            </div>
            <h2>About Taste of Italy</h2>
-                <img src="chef32.jpg" alt="A photo of Chef Frank Recocoe"/>
-                <p>Embark on a journey to the heart of Italy right here in Ohio!
-                    As one of Ohio's most acclaimed restaurants,
+                <div class = "bodyp1">
+                <p id = "p1" style="text-indent: 35px;">
+                    Embark on a journey to the heart of Italy right here in Ohio!
+                    As one of Ohio's <em>most</em> acclaimed restaurants,
                     Taste of Italy provides you with a variety of michelin-starred recipes combined with inherited first-generation Italian recipes!
-                    Chef Frank Recocoe prides himself on maintaining an Elegant and glamorous,
-                    yet relaxing and welcoming authentic Italian experience. 
+                    Chef Frank Recocoe prides himself on maintaining an <em> Elegant</em> and <em>glamorous</em> ,
+                    yet <em>relaxing</em> and <em>welcoming</em> authentic Italian experience. 
                 </p>
-            <div>
-                <p>Hospitality-focused, dedicated to excellence, and highly knowledgeable are just a few terms most often used to describe Frank.
+                <div class = "chefpicsection">
+                    <img src = "chef32.jpg" id = "chefpic" alt = "A photo of Chef Frank Recocoe"/>
+                    <p id = "subtitle1"><strong><em>Chef Frank Recocoe</strong></em></p>
+                </div>
+                <p style="text-indent: 35px;">
+                    Hospitality-focused, dedicated to excellence, and highly knowledgeable are just a few terms most often used to describe Frank.
                     This Ohio native was immersed in his family’s hospitality and the foodservice industry from an early age.
                     His father was an energetic and successful restaurateur in Brooklyn, Newyork, who kept Fredrick engaged in the business throughout his youth.
                     At home, his mother embodied hospitality and regularly hosted gatherings,
@@ -49,17 +71,43 @@
                      a great Italian experience celebrating the best ingredients, hospitality,
                      and service to the greater North East Ohio region.     
                 </p>
+                </div>
+            <br>
+
+            <h2>Visit one of our locations!</h2>
+            <div class = "molocations">                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d527.3544799053993!2d-81.52806838877648!3d41.608890976221694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830555824b22323%3A0xa6ca913f6ff7fbf7!2s22050%20Lakeshore%20Blvd%2C%20Euclid%2C%20OH%2044123!5e0!3m2!1sen!2sus!4v1674738785656!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href  ="Event.html#visit" > More Locations </a>
             </div>
-        <br>
-            <h2>Find a location</h2>
-            <!--insert a map think here-->
-                <img src="restaurant utsider.jpg" alt="photo of indoor-outdoor bar"/>
-            <h2>Contact Us</h2>     
+                <img src = "restaurant utsider.jpg" alt = "photo of indoor-outdoor bar"/>
+            <h2 id = "cus">Contact Us</h2> 
+            <!--insert form here-->  
+            <form>
+                <input type = "text" name = "contact" id = "name" value = "   Name" required>
+                <input type = "text" name = "email" value = "   Email@.com" id = "box1" required>
+                <textarea id = "textbox" name = "box" rows = "5" col = "30" required>  Tell us About your Visit!</textarea>
+                <input type = "submit" value = "Send" id = "button">
+            </form>  
         </body>
         <br>
         <footer>
+            <br>
+            <div class = "iconic">
+                <a href="https://twitter.com/awrestaurants/" target="_blank" >
+                    <img src = "7595667_twitter_social_network_logo_icon.png" id = "sm_icon">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/blaustern_fotografie/" >
+                    <img src="instagram_media_photo add_icon.png" id = "sm_icon">
+                </a>
+                <a href="https://facebook.com/awrestaurants/" target="_blank" >
+                    <img src = "317752_facebook_social media_social_icon.png" id = "sm_icon">
+                </a>
+            </div>               
             <p>
-                hello im footer
+                <br>22050 Lakeshore Blvd, Euclid, OH 44123
+                <br>copyright© 2023 </p>
+                <p id = "tag">Taste Of Italy</p>
+                <br>
             </p>
         </footer>
     </html>

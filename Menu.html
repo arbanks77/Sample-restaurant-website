@@ -10,53 +10,101 @@
         <header>
             <title>Taste of Italy</title>
             <nav>
-        <!--Insert location later-->
-                <a href="taste of italy.html">Home</a></li>
-                   <div class="dropdown">
-                    <button class = "drpdwnbtn">Menu
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class = "dropdown-content">
-                        <a href="Menu.html#Lunch">Lunch</a></li>
-                        <a href="Menu.html#Dinner">Dinner</a></li>
-                        <a href="Menu.html#Desert">Desert</a></li>
-                        <a href="Menu.html#Drinks">Drinks</a></li>
+                <div class="topnav">
+                    <div class = "dropdown2">
+                        <button class = "drpdwnbtn2">
+                            <span style="font-size:25px;cursor:pointer" onclick="openNav()" id = "hamburger">&#9776; </span>
+                        </button>
+                        <div class = "dropdown-content2">
+                            <a href = "taste of italy.html" class = "navbttn2" class = "navbttn">Home</a></li>
+                            <div class = "dropdown">
+                                <button class = "drpdwnbtn" id = "menubttn">Menu</button>
+                                <div class = "dropdown-content">
+                                    <a href = "Menu.html#Lunch">Lunch</a></li>
+                                    <a href = "Menu.html#Dinner">Dinner</a></li>
+                                    <a href = "Menu.html#Desert">Desert</a></li>
+                                    <a href = "Menu.html#Drinks">Drinks</a></li>
+                                </div>
+                            </div>
+                            <a href = "Event.html" class = "navbttn2">Events</a></li> 
+                            <a href = "taste of italy.html#cus" class = "navbttn2">Contact Us</a></li>
+                            <a href = "Event.html#visit" class = "navbttn2">Find A location</a></li>
+                        </div>
                     </div>
-                    </div>
-                <a href="Event.html">Events</a></div></li> 
+                </div>
             </nav> 
             <H1>Taste Of Italy</H1>
+            <!--insert menu content-->
         </header>
-        <img src="chef cooking.webp">
+        <img src="chef cooking.webp" id = "chefcooking">
         <body>
-            <div id="Drinks">
+            <div  class = "Drinks">
                 <h2>Drinks</h2>
-                    <img src="wine.jpg">
+                    <img src = "wine.jpg" id = "drink"/>
                     <h3>Drink specials</h3>
             </div>
             <div>
                 <h2>Appetizers</h2>
-                <img src="bread.webp"/>
+                <img src = "bread.webp"/>
             </div>
-            <div id="Lunch">
+            <div id = "Lunch">
+                <div class = "lunch">
                 <h2>Lunch</h2>
-                <img src="ravoili.webp"/>
+                <img src="ravoili.webp" id = "ravioli"/>
+                </div>
                     <h3>lunch special of the week</h3>
             </div>
-            <div id="Dinner">
+            <div id = "Dinner">
                 <h2>Dinner</h2>
-                <img src="spagehti.png"/>
-                <img src="chicken.jpg"/>
-                <img src="clamshot.jpg"/>
-                    <h3>Dinner Special</h3>
+                <div class = "dinner">
+                <img src = "spagehti.png" id = "spaghetti"/>
+                <img src = "chicken.jpg" id = "chicken"/>
+                <img src = "clamshot.jpg" id = "clamshot"/>
+                </div>    
+                <h3>Dinner Special</h3>
             </div>
-            <div id="Desert">
+            <div id = "Desert">
                 <h2>Desert</h2>
-                    <img src="cannoli-with-vanilla-custard-85970-1.jpeg" alt="photo of vanilla cannoli"/>
-                    <img src="Italian-Tiramisu-with-Mint-and-Chocolate-800x530.png" alt="A photo of chocolate tiramisu"/>
-                    <img src="hazelnut-panna-cotta-with-chocolate-ganache-155378-2.jpg" alt="hazelnut panna cotta with chocolate ganache"/>
+                <div class = "desert">
+                    <img src = "cannoli-with-vanilla-custard-85970-1.jpeg" alt="photo of vanilla cannoli" id = "cannoli"/>
+                    <img src = "Italian-Tiramisu-with-Mint-and-Chocolate-800x530.png" alt="A photo of chocolate tiramisu" id = "tiramisu"/>
+                    <img src = "hazelnut-panna-cotta-with-chocolate-ganache-155378-2.jpg" alt="hazelnut panna cotta with chocolate ganache" id = "ganache"/>
+                </div>
                     <h3>Sharables</h3>
             </div>
-                
-        </body>
+                    <br>
+                <div class = "molocations">
+                    <a href  ="Event.html#visit" >Visit One Of Our Locations</a>
+                </div>
+                        <img src="restaurant utsider.jpg" alt = "photo of indoor-outdoor bar"/>
+                    <h2>Contact Us</h2> 
+                    <form>
+                        <input type = "text" name = "contact" id = "name" value = " Name" minlength = "2" maxlength="30" required>
+                        <input type = "text" name = "email" value = "   Email@.com" id = "box1" minlength = "7" maxlength="30" required>
+                        <textarea id = "textbox" name = "box" rows = "5" col = "30" minlength = "3" maxlength="500" required>  Tell us About your Visit!</textarea>
+                        <input type = "submit" value = "Send" id = "button">
+                    </form> 
+                <br>    
+         </body>
+                <br>
+        <footer>
+            <br>
+            <div class = "iconic">
+                <a href="https://twitter.com/awrestaurants/" target="_blank" >
+                    <img src = "7595667_twitter_social_network_logo_icon.png" id = "sm_icon">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/blaustern_fotografie/" >
+                    <img src="instagram_media_photo add_icon.png" id = "sm_icon">
+                </a>
+                <a href="https://facebook.com/awrestaurants/" target="_blank" >
+                    <img src = "317752_facebook_social media_social_icon.png" id = "sm_icon">
+                </a>
+            </div>               
+            <p>
+                <br>22050 Lakeshore Blvd, Euclid, OH 44123
+                <br>copyright© 2023 </p>
+                <p id = "tag">Taste Of Italy</p>
+            </p>
+            <br>
+        </footer>
     </html>

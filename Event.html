@@ -10,25 +10,76 @@
         <header>
             <title>Taste of Italy</title>
             <nav>
-        <!--Insert location later-->
-                <a href="taste of italy.html">Home</a></li>
-                   <div class="dropdown">
-                    <button class = "drpdwnbtn">Menu
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class = "dropdown-content">
-                        <a href="Menu.html#Lunch">Lunch</a></li>
-                        <a href="Menu.html#Dinner">Dinner</a></li>
-                        <a href="Menu.html#Desert">Desert</a></li>
-                        <a href="Menu.html#Drinks">Drinks</a></li>
+                <div class="topnav">
+                    <div class = "dropdown2">
+                        <button class = "drpdwnbtn2">
+                            <span style="font-size:25px;cursor:pointer" onclick="openNav()" id = "hamburger">&#9776; </span>
+                        </button>
+                        <div class = "dropdown-content2">
+                            <a href = "taste of italy.html" class = "navbttn2" class = "navbttn">Home</a></li>
+                            <div class = "dropdown">
+                                <button class = "drpdwnbtn" id = "menubttn">Menu</button>
+                                <div class = "dropdown-content">
+                                    <a href = "Menu.html#Lunch">Lunch</a></li>
+                                    <a href = "Menu.html#Dinner">Dinner</a></li>
+                                    <a href = "Menu.html#Desert">Desert</a></li>
+                                    <a href = "Menu.html#Drinks">Drinks</a></li>
+                                </div>
+                            </div>
+                            <a href = "Event.html" class = "navbttn2">Events</a></li> 
+                            <a href = "taste of italy.html#cus" class = "navbttn2">Contact Us</a></li>
+                            <a href = "Event.html#visit" class = "navbttn2">Find A location</a></li>
+                        </div>
                     </div>
-                    </div>
-                <a href="Event.html">Events</a></div></li> 
+                </div> 
             </nav> 
-            <H1>Taste Of Italy</H1>
+            <br> 
+            <div class = "heading">
+                <h1 id = "title1">Taste</h1><h1 id = "title2"> Of</h1><h1 id = "title3"> Italy</h1>
+            </div>
         </header>
         <body>
+            <h2 id = "visit">Visit one of our locations!</h2>
+                <div class = "places">
+                    <p>22050 Lakeshore Blvd,</p>
+                    <p>Euclid, OH 44123</p>
+                <br>
+                    <p>3303 Curtice Rd,</p>
+                    <p> Northwood, OH 43619</p>
+                <br>
+                    <p>2031 Park Ave W,</p>
+                    <p> Ontario, OH 44906</p>
+                <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d527.3544799053993!2d-81.52806838877648!3d41.608890976221694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830555824b22323%3A0xa6ca913f6ff7fbf7!2s22050%20Lakeshore%20Blvd%2C%20Euclid%2C%20OH%2044123!5e0!3m2!1sen!2sus!4v1674738785656!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
             <h2>Having a party? Contact us!</h2>
-            <!--insert form here-->
+                <form>
+                    <input type = "text" name = "contact" id = "name" value = " Name" minlength = "2" maxlength="30" required>
+                    <input type = "text" name = "email" value = "   Email@.com" id = "box1" minlength = "7" maxlength="30" required>
+                    <textarea id = "textbox" name = "box" rows = "5" col = "30" minlength = "3" maxlength="500" required>  Tell us About your Visit!</textarea>
+                    <input type = "submit" value = "Send" id = "button">
+                </form>
+                <br>  
         </body>
+        <br>
+        <footer>
+            <br>
+            <div class = "iconic">
+                <a href="https://twitter.com/awrestaurants/" target="_blank" >
+                    <img src = "7595667_twitter_social_network_logo_icon.png" id = "sm_icon">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/blaustern_fotografie/" >
+                    <img src="instagram_media_photo add_icon.png" id = "sm_icon">
+                </a>
+                <a href="https://facebook.com/awrestaurants/" target="_blank" >
+                    <img src = "317752_facebook_social media_social_icon.png" id = "sm_icon">
+                </a>
+            </div>               
+            <p>
+                <br>22050 Lakeshore Blvd, Euclid, OH 44123
+                <br>copyright© 2023 </p>
+                <p id = "tag">Taste Of Italy</p>
+                <br>
+            </p>
+        </footer>
     </html>
