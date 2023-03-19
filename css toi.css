@@ -28,7 +28,7 @@
         font-size: 20px;
         display:none; 
         position: fixed;
-        background-color: inherit!important;
+        background-color: inherit;
     }
     header{
         display: flex;
@@ -76,7 +76,7 @@
         text-align: left;
         font-size: 25px;
         width: 150px;
-        background-color: silver;
+        background-color: silver!important;
     }
     button#menubttn:hover{
         background-color: lightgray;
@@ -106,6 +106,7 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        background-color: silver!important;
     }
     .dropdown-content2 a {
         float:none;
@@ -114,6 +115,7 @@
         text-decoration: none;
         display: block;
         text-align: left;
+        background-color: silver!important;
     }
     .dropdown-content2 a:hover{
         font-weight: bold;
@@ -152,8 +154,10 @@
         margin-left: 20px;
         justify-content: flex-start;   
     }
-    p#places{
-        justify-content: flex-start;
+    div.places{ 
+        margin: left 0px;
+        padding:0px;
+        text-align: left!important;
     } 
 }
 
@@ -199,7 +203,7 @@ nav a{
 .dropdown-content{
     display: none;
     position:absolute;
-    background-color: silver;
+    background-color: silver!important;
     min-width: 160px;
     z-index: 1;
 }
@@ -411,7 +415,9 @@ div.Drinks{
     align-items: center;
 }
 div.heading{
-    text-align: center;
+    display:flex;
+    justify-items: left;
+    align-items: left!important;
     background-color: inherit;
 }
 
@@ -588,9 +594,10 @@ h2#visit{
     margin-left: 20px;
     justify-content: center;   
 }
-p.places{
-margin-left: 20px;
-padding:0px;
+div.places{
+    margin-left: 20px;
+    padding:0px;
+    text-align: center;
 }
 
 footer{
@@ -620,6 +627,13 @@ div.iconic{
     justify-content: space-evenly;
     align-content: center;
   }
+div#eventtime{
+    text-align: center;
+}
+div#party1{
+    text-align: center;
+    font-size: large;
+}
 footer a{
     border-radius: 100%;
     outline: black;
